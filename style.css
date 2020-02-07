@@ -17,7 +17,6 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  
 }
 
 html {
@@ -30,7 +29,6 @@ body {
 
 @keyframes fade {
   0% {
-
   }
   100% {
     border-top-color: transparent;
@@ -38,11 +36,11 @@ body {
 }
 
 @keyframes rotate {
-  0% { transform: rotate(10deg)
-
+  0% {
+    transform: rotate(10deg);
   }
   100% {
-    transform: rotate(20deg)
+    transform: rotate(20deg);
   }
 }
 
@@ -69,7 +67,6 @@ body {
   transition: all 2s;
   transform-origin: center;
   z-index: 1;
-  
 }
 
 .shape-container-interaction {
@@ -80,12 +77,11 @@ body {
   transform: scale(1);
 }
 
-
 .shape {
   width: 0;
   height: 0;
   border-top: 60px solid hsl(140, 50%, 30%);
-  border-left: 60px solid ;
+  border-left: 60px solid;
   border-radius: 50%;
   margin: 0;
   display: block;
@@ -109,7 +105,6 @@ body {
   z-index: 2;
   margin: auto;
   position: fixed;
-  
 }
 
 p {
@@ -117,6 +112,45 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 3em;
-  bottom: 80px;
+  top: 20px;
   left: 80px;
+  position: absolute;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  font-family: ivymode, sans-serif;
+}
+.nav-links {
+  display: flex;
+  background-color: cyan;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-links a{
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav-links li{
+  list-style: none;
+
+
+.intro {
+  padding-bottom: 20px;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p .ci {
+  font-size: .5em;
 }
