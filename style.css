@@ -150,5 +150,10 @@ html {
 }
 
 p .ci {
+<<<<<<< HEAD
   font-size: 0.5em;
+=======
+  font-size: .5em;
+  top: 50px;
+>>>>>>> 1e529a0d99042e4026b1ff4d7695d8a7b88732d4
 }
