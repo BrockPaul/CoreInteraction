@@ -1,0 +1,108 @@
+body {
+  background-image: url(https://cdn.glitch.com/21287fec-21d3-469e-9ce6-866ccb644c80%2Fcheckerboard-cross.png?v=1581031378921);
+}
+
+header {
+  font-family: ivymode, sans-serif;
+  margin: auto;
+  background-color: hsla(49, 68%, 84%, 1);
+  margin: auto;
+  top: 100px;
+  padding: 50px 50px 50px 50px;
+  margin: auto;
+  width: 50%;
+  left: 25%;
+
+  position: absolute;
+  z-index: 2;
+}
+
+.land {
+  background-color: hsla(49, 68%, 84%, 0.3);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: block;
+}
+
+h1 {
+  font-family: ivymode, sans-serif;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+}
+h3 {
+  font-family: ivymode, sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+.intro {
+  margin: 0px 80px 80px 140px;
+  position: absolute;
+  z-index: 1;
+  font-family: lato, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.reverse {
+  position: absolute;
+  margin: 0px 80px 80px 140px;
+  text-align: right;
+  z-index: 1;
+  font-family: lato, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.content {
+  position: absolute;
+  top: 1000px;
+  width: 50%;
+  right: 50vw;
+  left: 40%;
+  padding: 20px 20px 20px 20px;
+  background-color: hsla(49, 68%, 95%, 1);
+  list-style-type: none;
+  font-family: baskerville-display-pt, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.one {
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  min-height: 8vh;
+  background-color: none;
+  font-family: ivymode, sans-serif;
+}
+.nav-links {
+  display: flex;
+  background-color: none;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  transition: scale 0.5s;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a:hover {
+  transform: scale(1.1, 1.1);
+}
