@@ -1,0 +1,177 @@
+body {
+  background-color: black;
+}
+
+.shapes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes move {
+  0% {
+    transform: translate(-24px, -25px) rotate(0deg) scaleX(1.46) scaleY(1.51)
+      skewX(0deg);
+  }
+  58% {
+    transform: translate(106px, -32px) rotate(104deg) skewX(-525deg);
+  }
+  59% {
+    transform: translate(106px, -32px) rotate(160deg) skewX(-625deg);
+  }
+  60% {
+    transform: translate(110px, -32px) rotate(108deg) skewX(-543deg);
+  }
+  100% {
+    transform: translate(200px, 0px) rotate(180deg);
+  }
+  101% {
+    transform: translate(-45px, -37px) rotate(180deg) scaleX(1.46) scaleY(1.51)
+      skewX(-543deg);
+  }
+}
+
+.s1 {
+  background-color: red;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: move;
+  width: 300px;
+  height: 230px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  mix-blend-mode: screen;
+}
+.s2 {
+  background-color: #374658;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 220px;
+  height: 90px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  mix-blend-mode: screen;
+}
+.s3 {
+  background-color: #b0a670;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  mix-blend-mode: screen;
+}
+.s4 {
+  background-color: #2f33ca;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  mix-blend-mode: screen;
+}
+.s5 {
+  background-color: #d08d89;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  mix-blend-mode: screen;
+}
+.s6 {
+  background-color: #932cb8;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  mix-blend-mode: screen;
+}
+.s7 {
+  background-color: #a63068;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  mix-blend-mode: screen;
+}
+.s8 {
+  background-color: #25bb46;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 7s;
+  mix-blend-mode: screen;
+}
+.s9 {
+  background-color: #704364;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: move;
+  width: 300px;
+  height: 220px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 8s;
+  mix-blend-mode: screen;
+}
+.s10 {
+}
