@@ -3,16 +3,21 @@ body {
 }
 
 .shapes {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 @keyframes move {
   0% {
     transform: translate(-24px, -25px) rotate(0deg) scaleX(1.46) scaleY(1.51)
-      skewX(0deg);
+      skewX(0deg) opacity(0);
   }
+  10% {
+    transform: translate(-24px, -25px) rotate(0deg) scaleX(1.46) scaleY(1.51)
+      skewX(0deg) opacity(1);
+  }
+
   58% {
     transform: translate(106px, -32px) rotate(104deg) skewX(-525deg);
   }
@@ -22,8 +27,11 @@ body {
   60% {
     transform: translate(110px, -32px) rotate(108deg) skewX(-543deg);
   }
+  90% {
+    transform: translate(200px, 0px) rotate(180deg) opacity(0.8);
+  }
   100% {
-    transform: translate(200px, 0px) rotate(180deg);
+    transform: translate(200px, 0px) rotate(180deg) opacity(0);
   }
   101% {
     transform: translate(-45px, -37px) rotate(180deg) scaleX(1.46) scaleY(1.51)
