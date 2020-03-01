@@ -1,0 +1,144 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+.all {
+  animation: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.a {
+  background-color: #1e3645;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  right: ;
+  bottom: ;
+  width: 100px;
+  height: 100px;
+  animation: spin;
+
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.b {
+  background-color: #cf4351;
+  position: absolute;
+  top: ;
+  left: ;
+  right: 100px;
+  bottom: ;
+  width: 100px;
+  height: 250px;
+  animation: spin;
+
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.c {
+  background-color: #f37871;
+  position: absolute;
+  top: ;
+  left: ;
+  right: 10px;
+  bottom: ;
+  width: 200px;
+  height: 150px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.d {
+  background-color: #f6988b;
+  position: absolute;
+  top: ;
+  left: ;
+  right: ;
+  bottom: ;
+  width: 1200px;
+  height: 10px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.e {
+  background-color: #dfc0c6;
+  position: absolute;
+  top: 200px;
+  left: ;
+  right: ;
+  bottom: ;
+  width: 1200px;
+  height: 10px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.f {
+  background-color: #18afcd;
+  position: absolute;
+  top: ;
+  left: 20px;
+  right: ;
+  bottom: ;
+  width: 100px;
+  height: 300px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.g {
+  background-color: #1e3645;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  right: ;
+  bottom: ;
+  width: 100px;
+  height: 100px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.h {
+  background-color: #1e3645;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  right: ;
+  bottom: ;
+  width: 300px;
+  height: 200px;
+  animation: spin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
