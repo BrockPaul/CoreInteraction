@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Button Width Changer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      /* .bigshape {
+      }
+
+      .button {
+        color: red;
+        background-color: pink;
+        cursor: pointer;
+      } */
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <img src="img\01.jpg" class="bigshape" width=" " height=" " />
+    <button class="button">button</button>
+    <div class="button">buttondiv</div>
+    <script>
+      var shapesX = [
+        'width="100"',
+        'width="200"',
+        'width="300"',
+        'width="400"',
+        'width="500"'
+      ];
+      var shapesY = [
+        'height="100"',
+        'height="200"',
+        'height="300"',
+        'height="400"',
+        'height="500"'
+      ];
+
+      var shape = $(".bigshape");
+
+      function select_random(x) {
+        y = x[Math.floor(Math.random() * x.length)];
+        return y;
+      }
+
+      function display_shapeX() {
+        selected_shapeX = select_random(shapesX);
+        $(".bigshape").attr("width", selected_shapeX);
+      }
+      function display_shapeY() {
+        selected_shapeY = select_random(shapesY);
+        $(".bigshape").attr("height", selected_shapeY);
+      }
+
+      $(document).ready(function() {
+        display_shapeX();
+        $("button").click(function() {
+          display_shapeX();
+        });
+      });
+      $(document).ready(function() {
+        display_shapeY();
+        $("button").click(function() {
+          display_shapeY();
+        });
+      });
+    </script>
+  </body>
+</html>
