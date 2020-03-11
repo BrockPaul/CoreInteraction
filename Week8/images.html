@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .hero_image {
+        width: 50%;
+      }
+
+      button {
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        color: red;
+        background-color: pink;
+        cursor: pointer;
+      }
+    </style>
+
+    <!--   jquery hosted library   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div style="position: fixed;margin-top: 5%; margin-left: 5%;">
+      <img class="hero_image" src=" " />
+    </div>
+
+    <button>
+      something here
+    </button>
+
+    <script>
+      var images = [
+        "img/pic (1).jpg",
+        "img/pic (2).jpg",
+        "img/pic (3).jpg",
+        "img/pic (4).jpg",
+        "img/pic (5).jpg",
+        "img/pic (6).jpg"
+      ];
+
+      var image = $(".hero_image");
+
+      function select_random(x) {
+        y = x[Math.floor(Math.random() * x.length)];
+        return y;
+      }
+
+      function display_image() {
+        selected_image = select_random(images);
+        $(".hero_image").attr("src", selected_image);
+      }
+
+      $(document).ready(function() {
+        display_image();
+        $("button").click(function() {
+          display_image();
+        });
+      });
+    </script>
+  </body>
+</html>

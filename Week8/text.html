@@ -1,0 +1,106 @@
+<!-- document.getElementByID('name') -->
+<!-- window.onLoad = function(){} -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Javascript Random</title>
+    <!-- Thanks! Adapted from an exercise by Laurel Schwulst! -->
+    <style>
+      body {
+        background-color: white;
+      }
+      #line_one {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 80px;
+        text-align: left;
+      }
+      #line_two {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 80px;
+        text-align: left;
+      }
+      #line_three {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 80px;
+        text-align: left;
+      }
+      #line_four {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 80px;
+        text-align: left;
+      }
+      /* HERE YOUR CODE */
+    </style>
+
+    <script type="text/javascript">
+      // run the folowing code when the page has loaded.
+      window.onload = function() {
+        // first thing, store some HTML elements in variables. This makes it easier to refer to these things later on, it's just for saving room.
+        var first_line = document.getElementById("line_one");
+        var second_line = document.getElementById("line_two");
+        var third_line = document.getElementById("line_three");
+        var fourth_line = document.getElementById("line_four");
+        var button = document.getElementById("button");
+
+        // now define a few arrays. The items in these arrays will be used to populate the HTML.
+        var line_one = ["This", "That", "Whose", "What"];
+        var line_two = ["shoudln't", "should", "can't", "can"];
+        var line_three = ["exist", "return", "demand", "create"];
+        var line_four = ["fruitfully", "coldly", "horribly", "intentionally"];
+
+        // select_random is a function that returns a random item from an array.
+        // x, in the parentheses, is called a parameter. It's like a variable that only exists in the scope of one function.
+        // When we run this function later on, we'll replace x with the name of the array that we want to select from.
+        function select_random(x) {
+          y = x[Math.floor(Math.random() * x.length)];
+          return y;
+        }
+
+        // this is a function called generate.
+        function generate() {
+          // the first generate it does is create four variables. Each variable is assigned a value. The value is the random item from each array.
+          var selected_one = select_random(line_one);
+          var selected_two = select_random(line_two);
+          var selected_three = select_random(line_three);
+          var selected_four = select_random(line_four);
+
+          // Now, take the random item from the array, and change the HTML content of each item to that value.
+          first_line.innerHTML = selected_one;
+          second_line.innerHTML = selected_two;
+          third_line.innerHTML = selected_three;
+          fourth_line.innerHTML = selected_four;
+        }
+
+        // When you click the 'button', run the 'generate' function. This will change the content of the page.
+        document.getElementById("button").onclick = function() {
+          // also, tell us that we're clicking, so we can make sure this works!
+          console.log("click");
+          generate();
+        };
+
+        // This is necessary so that when the page loads, it automatically runs generate.
+        generate();
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="button-container">
+        <button id="button">Again</button>
+      </div>
+
+      <div id="line_one"></div>
+      <div id="line_two"></div>
+      <div id="line_three"></div>
+      <div id="line_four"></div>
+    </div>
+  </body>
+</html>
