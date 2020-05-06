@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.a {
+    background-color: tan;
+    width: 100%;
+    /* height: 20vh; */
+display: flex;
+
+}
+.b {
+background-color: tan;
+width: 100%;
+height: 100vh;
+display: flex;
+}
+.c {
+background-color: maroon;
+width: 100%;
+height: 100vh;
+display: flex;
+
+}
+.d {
+background-color: tan;
+width: 100%;
+height: 80vh;
+display: flex;
+
+}
+.e {
+background-color: maroon;
+width: 100%;
+height: 5vh;
+display: flex;
+
+}
+.title {
+    background-color: maroon;
+    width: 36vw;
+    height: 10vh;
+    position: absolute;
+}
+
+.title1 {
+    font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 800;
+font-style: italic;
+font-size: 20em;
+margin-block-start: 0;
+position: absolute;
+top: 2%;
+}
+
+.maptextlist {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 20vh;
+letter-spacing: 3px;
+font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 400;
+font-style: bold;
+font-size: 10em;
+color: black;
+list-style-type: none;
+/* margin-top: 10vh; */
+}
+
+.poptext p {
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+letter-spacing: 3px;
+position: absolute;
+z-index: 5;
+font-size: 17em;
+left: 39%;
+}
+.filler {
+    font-family: acumin-pro-semi-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 5em;
+color: black;
+text-justify: auto;
+text-align: right;
+}
+.popbox {
+    border: dashed white 2px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    margin: .5em auto;
+    margin-top: 15vh;
+
+}
+
+.maptextlist {
+position: absolute;
+right: 10%;
+}
+
+.maptextlist li { 
+    text-decoration: none; 
+    display: flex; 
+    text-align: left;
+    z-index: 10;
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* margin: 0 0 5px 0;  */
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    }
+.maptextlist:hover li {
+    opacity: 0.5;
+}
+.maptextlist:hover li:hover {
+    opacity: 1;
+}
+
+h2 {
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20em; 
+    text-transform: capitalize;
+    color: black;
+    z-index: 4;
+}
+
+/* dev ed scrollmagic  */
+  
+  .intro {
+    height: 100vh;
+  }
+  
+  .intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .intro h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40em;
+    color: white;
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  
+  section {
+    height: 100vh;
+    color: black;
+  }
+  
+  section h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .mappu {
+      height: 100vh;
+      position: absolute;
+      z-index: 1;
+
+  }
+
+  .map1 {
+      z-index: 2;
+  }
+  
+
+/* ipad  */
+@media (max-width: 767px) {
+
+
+    h1 {
+      text-align: left;
+    }
+  
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .maptextlist {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+        font-size: 20em;
+        margin-top: 60vh;
+        width: 90vw;
+        height: 20vh;
+        /* margin: 40vh 10vw 10px 10px; */
+    }
+    .maptextlist li{
+
+      transition: 1s all ease-in-out;
+    }
+    .b {
+        width: 100vw;
+    }
+  .mappu {
+      width: 100vw;
+      height: auto;
+  }
+  .intro video {
+      width: 100vw;
+      height: 100vh;
+  }
+    .appear {
+      opacity: 1;
+      transition: 1s all ease-in-out;
+    }
+
+
+#nonipad {
+    display: none;
+}
+
+section {
+    height: 100vh;
+}
+
+  }
+
+@media (max-width: 375px) {
+.b {
+    display: none;
+}
+
+.c {
+    display: block;
+}
+
+
+}
+/* portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait){
+
+}
+
+.imports {
+  width: 10vh;
+  margin-left: 6vw;
+}
+
+.exports {
+  width: 10vh;
+  margin-left: 6vw;
+}
+
+.agriculture {
+    width: 10vh;
+    margin-left: 6vw;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
