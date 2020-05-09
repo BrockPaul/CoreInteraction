@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+  font-style: normal;
+  }
+  
+  
+  html, body {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  
+  body {
+    font-family: sans-serif;
+    
+  }
+  
+  .cont1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .rapper {
+    width: 100vw;
+    height: auto;
+    background-image: url("assets/hkm-01.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:0;
+    padding:0;
+    position: absolute;
+  }
+  
+  
+
+  .intro {
+    height: 100vh;
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  }
+  
+  .intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: rgba(39,62,84,0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    color: red;
+  }
+  
+
+  .intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    font-family: ivymode, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  }
+  
+
+  .v {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    font-family: ivymode, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  z-index: 10;
+  }
+
+
+  .cont1 {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("assets\Mountains.jpg");
+  }
+
+  .cont2 {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("assets\City.jpg");
+      margin-top: 100vh;
+      position: absolute;
+  }
+
+  .cont3 {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("assets\Wheat.jpg");
+    margin-top: 200vh;
+    position: absolute;
+  }
+
+  .cont4 {
+      width: 100vw;
+      height: 100vh;
+  }
+
+
+
+  .mountains {
+width: 100vw;
+height: 100vh;
+position: absolute;
+z-index: -1;
+right: 21px;
+
+  }
+
+  .city {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .wheat {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+  .box1 {
+    margin: 0 auto;
+    height: 68.1vh;
+    width: 68.1vw;
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 15.95vh;
+    border: 5px double #999;
+  }
+  .box2 {
+    margin: 0 auto;
+    height: 68.1vh;
+    width: 68.1vw;
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 15.95vh;
+    border: 5px double #999;
+    background-color: white;
+  }
+  .box3 {
+    margin: 0 auto;
+    height: 68.1vh;
+    width: 68.1vw;
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 15.95vh;
+    border: 5px double #999;
+    background-color: white;
+  }
+
+  .mappz {
+    width: 65%;
+    float: left;
+  }
+
+  .textp {
+    width: 35%;
+    float: right;
+    background-color: white;
+    padding-right: 10vw;
+
+  }
+
+
+  
+.mop {
+    font-size: 16em;
+    list-style: none;
+        font-family: ivymode, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+      
+      
+  }
+  
+  .maptextlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    width: 600px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -10vh;
+    margin-left: 2vw;
+  }
+  
+  .mappu {
+    height: 66.5vh;
+  }
+
+  .popu {
+    font-family: ivymode, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30em;
+  margin: 0 auto;
+margin-top: 10vh;
+margin-left: 5vw;
+width: 120%;
+  }
+
+  .populp {
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    font-size: 10em;
+
+  }
+
+  .mtn {
+      position: absolute;
+      overflow-x: hidden;
+      right: -35vw;
+      bottom: 0;
+      outline: 0;
+      z-index: 50;
+
+  }
+  .bdg {
+      position: absolute;
+      overflow-x: hidden;
+      right: 10vw;
+      outline: 0;
+      left: 0;
+top: 22vh;
+width: 27vw;
+z-index: 50;
+
+  }
+  .wht {
+      position: absolute;
+      overflow-x: hidden;
+      right: -5vh;
+      outline: 0;
+top: 10vh;
+width: 27vw;
+transform: scaleX(-1) scale(.8);
+z-index: 50;
+animation-duration: 60s; 
+animation-fill-mode: both; 
+animation-iteration-count:infinite;
+
+  }
+
+
+  .maptextlist li { 
+    text-decoration: none; 
+    display: inline; 
+    text-align: center;
+    z-index: 10;
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* margin: 0 0 5px 0;  */
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    }
+    .maptextlist:hover li {
+    opacity: 0.3;
+    }
+    .maptextlist:hover li:hover {
+    opacity: 1;
+    }
+
+    .agrtext p { 
+        text-decoration: none; 
+        text-align: center;
+        z-index: 10;
+        /* padding: 10px; */
+        /* text-align: center; */
+        /* margin: 0 0 5px 0;  */
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        }
+        .agrtext:hover p {
+        opacity: 0.3;
+        }
+        .agrtext:hover p:hover {
+        opacity: 1;
+        }
+
+    @keyframes wiggle {
+        0% { transform: scaleX(-1) scale(.8) skewX(9deg); } 
+        10% { transform: scaleX(-1) scale(.8) skewX(-8deg); } 
+        20% { transform: scaleX(-1) scale(.8) skewX(7deg); } 
+        30% { transform: scaleX(-1) scale(.8) skewX(-6deg); } 
+        40% { transform: scaleX(-1) scale(.8) skewX(5deg); } 
+        50% { transform: scaleX(-1) scale(.8) skewX(-4deg); } 
+        60% { transform: scaleX(-1) scale(.8) skewX(3deg); } 
+        70% { transform: scaleX(-1) scale(.8) skewX(-2deg); } 
+        80% { transform: scaleX(-1) scale(.8) skewX(1deg); } 
+        90% { transform: scaleX(-1) scale(.8) skewX(0deg); } 
+        100% { transform: scaleX(-1) scale(.8) skewX(0deg); } 
+     } 
+     .wiggle { 
+        -webkit-animation-name: wiggle;
+        animation-name: wiggle; 
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in; 
+     }
+     .animated.wiggle { 
+        animation-duration: 1s;
+     }
+@keyframes bounce {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(0px)}
+}
+     .bounce {
+        animation-name: bounce; 
+        animation-timing-function: ease-in-out; 
+     }
+
+.agrimg:hover {
+    animation: bounce .4s ;
+}
+
+     .ttin {
+         transition: all 2s ease-in-out;
+     }
+
+     .agrparent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+        align-items: center;
+justify-content: stretch;
+align-content: stretch;    
+/* border: 5px double #999; */
+width: 100%;
+height: 100%;   
+}
+
+
+.agrimg {
+    width: 100px;
+}
+.agrtext {
+
+}
+.agrh {
+    font-family: ivymode, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25em;
+    margin: 0 auto;
+  margin-top: 11vh;
+  margin-left: 1vw;
+  width: 100%;
+}
+
+.agrp {
+    font-size: 13em;
+    font-weight: 700;
+    font-family: raleway, sans-serif;
+    text-align: center;
+    margin-bottom: 1vw;
+    color: rgb(206, 50, 50);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.circle-enter-active { animation: 1s circle reverse; }
+.circle-leave-active { animation: 1s circle; }
+
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  100% { clip-path: circle(0%); }
+}
+
+.agrimg:hover {
+    transform: translate
+}
+
+.agrwrap {
+    width: 75%;
+}
+
+.impimg {
+    width: 100%;
+    height: 65%;
+}
+.expimg {
+    width: 100%;
+    height: 65%;
+}
+.impexptext {
+    width: 100%;
+    height: 65%;
+}
+.biggo {
+  display: none;
+}
+h3 {
+    font-family: ivymode, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25em;
+    margin: 0 auto;
+}
+
+.impexp {
+    position: absolute;
+}
+
+.impexpimg {
+    height: 66.5vh;
+    
+}
+
+.trans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: space-evenly;
+     }
+
+.bar {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(196,0,0);
+    margin-top: 220vh;
+}
+.fax {
+    width: 100vw;
+    height: 30vh;
+    margin-left: 8vw; 
+
+    margin-top: 18vh;
+}
+.trans1 {
+    width: 18vw;
+    margin-right: -5vw; 
+}
+
+.popugraph {
+    width: 100%;
+
+}
+.popimg {
+    height: 54.5vh;
+    margin-left: 3vw;
+}   
+
+
+.textpop {
+    float: left;
+    background-color: white;
+    margin: 0 auto;
+
+  }
+
+  .popul {
+    font-family: ivymode, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50em;
+  margin-left: 25vw;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+width: 120%;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .mobileimg {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait){
+    
+.space {
+  height: 10vh;
+}
+    .hidden {
+      display: block;
+    }
+    .intro {
+      display: none;
+    }
+    
+    .cont1 .gone{
+      display: none;
+    }
+    .cont2 .gone{
+      display: none;
+    }
+    .cont3 .gone{
+      display: none;
+    }
+
+    .box1 {
+      height: 100vh;
+      width: 100vw;
+    }
+    .box3 {
+      height: 100vh;
+      width: 100vw;
+    }
+    .box2 {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .gone {
+      display: none; 
+    }
+
+    .mobile {
+      display: block;
+      font-size: 15em;
+      color: black;
+      font-family: ivymode, sans-serif;
+      margin-left: 2vw;
+    }
+    
+    .mappz {
+      width: 0;
+    }
+    .populp {
+      width: 100%;
+      line-height: 1.5em;
+    }
+    .textp {
+      width: 100%;
+      height: 100%;
+    }
+.popu {
+  margin-top: 1vh;
+}
+    .mobilet {
+      display: block;
+      
+    }
+
+    .cont1 {
+      overflow-y: hidden;
+    }
+    .cont2 {
+      overflow-y: hidden;
+    }
+    .cont3 {
+      overflow-y: hidden;
+    }
+
+    .mtn {
+      transform: scale(.3);
+      right: -125vw;
+      bottom: -30vh;
+    }
+
+    .mobileimg {
+      display: block;
+      right: -115vw;
+      transform: scale(.23);
+
+    }
+
+    .bar {
+    margin-top: -100vh;
+    }
+
+    .fax {
+      display: none;
+      overflow-y: hidden;
+    }
+
+    .tp {
+      padding-right: 10vw;
+      font-size: 16em;
+    }
+
+    .popul {
+      margin-left: 5vw;
+    }
+
+    
+    .mobileimg2 {
+      display: block;
+      right: -115vw;
+      transform: scale(.23);
+
+    }
+
+    .bdg {
+      top: 70vh;
+      left: 25vh;
+      width: 50vw;
+    }
+
+    .agrtext {
+      width: 100%;
+      overflow-y: hidden;
+    }
+
+    .agrwrap {
+      width: 0%;
+
+    }
+
+    .agrh {
+      font-size: 35em;
+      margin-top: 2vh;
+      margin-left: 5vw;
+    }
+
+    .scrollmagic-pin-spacer {
+      display: none;
+    }
+
+    .tpt {
+      padding-right: 15vw;
+    }
+    .agrtext p {
+      text-align: left;
+
+    }
+
+    .mobileimg3 {
+      top: 87vh;
+      right: 5vh;
+      transform: scale(1.4);
+    }
+
+    .biggo {
+      display: none;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 2560px){
+    .biggo {
+      display: block;
+      width: 100vw;
+    }
+
+    .cont1 {
+      display: none;
+    }
+    .cont2 {
+      display: none;
+    }
+    .cont3 {
+      display: none;
+    }
+    .cont4 {
+      display: none;
+    }
+    .intro {
+      opacity: 0;
+    }
+  }
